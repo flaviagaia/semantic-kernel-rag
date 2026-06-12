@@ -2,7 +2,7 @@
 
 [🇧🇷 Português](#-português) · [🇺🇸 English](#-english)
 
-Python · Semantic Kernel ≥ 1.43 · OpenAI Embeddings (text-embedding-3-small, 1536d)
+Python 3.10+ · Semantic Kernel ≥ 1.43 · OpenAI Embeddings (text-embedding-3-small, 1536d) · MIT License
 
 ---
 
