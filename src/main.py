@@ -52,6 +52,12 @@ class DocChunk:
 
 
 async def main() -> None:
+    if not os.getenv("OPENAI_API_KEY"):
+        raise SystemExit(
+            "OPENAI_API_KEY não configurada. "
+            "Copie .env.example para .env e adicione sua chave."
+        )
+
     embedder = OpenAITextEmbedding(
         ai_model_id=os.getenv("OPENAI_EMBEDDING_MODEL_ID", "text-embedding-3-small"),
         api_key=os.getenv("OPENAI_API_KEY"),
